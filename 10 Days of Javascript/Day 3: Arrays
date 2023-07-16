@@ -1,0 +1,7 @@
+function getSecondLargest(nums) {
+    const uniqueArray = nums.filter((value, index, self) => self.indexOf(value) === index);
+    uniqueArray.sort((a, b) => b - a);
+    
+    return (uniqueArray[1])
+    // Complete the function
+}
